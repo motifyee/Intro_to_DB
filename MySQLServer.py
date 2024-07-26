@@ -14,5 +14,5 @@ try:
     mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
     print("Database created succesfully")
-except:
+except mysql.connector.Error:
     print("Something went wrong, couldn't create a new database")
