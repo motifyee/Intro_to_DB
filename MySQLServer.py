@@ -11,7 +11,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 try:
-    mycursor.execute("CREATE DATABASE alx_book_store IF NOT EXISTS")
+    mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
     print("Database created succesfully")
 except:
